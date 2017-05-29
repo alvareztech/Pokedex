@@ -1,7 +1,10 @@
 # Pokedex
-Una aplicación que hace uso Retrofit para consumir la API de Pokeapi, además de cargar imágenes con Glide. Tutoriales en youtube.com/alvareztech
 
-* [Website tutorial](http://alvarez.tech/crear-pokedex-consumir-api-android/)
+An application that uses Retrofit to consume the Pokeapi API, in addition to loading images with Glide.
+
+## Step-by-step tutorial and video
+
+[alvarez.tech/labs/android-retrofit-pokedex](https://alvarez.tech/labs/android-retrofit-pokedex)
 
 ## Screenshots
 
