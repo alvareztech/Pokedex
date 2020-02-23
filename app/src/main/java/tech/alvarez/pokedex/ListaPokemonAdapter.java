@@ -42,7 +42,7 @@ public class ListaPokemonAdapter extends RecyclerView.Adapter<ListaPokemonAdapte
         holder.nombreTextView.setText(p.getName());
 
         Glide.with(context)
-                .load("http://pokeapi.co/media/sprites/pokemon/" + p.getNumber() + ".png")
+                .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + p.getNumber() + ".png")
                 .centerCrop()
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
