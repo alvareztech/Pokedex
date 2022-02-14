@@ -4,7 +4,7 @@ An application that uses _Retrofit_ to consume the [__PokéAPI__](https://pokeap
 
 ## Step-by-step tutorial and video
 
-[alvarez.tech/videos/android/consume-pokemon-api-retrofit/](https://alvarez.tech/videos/android/consume-pokemon-api-retrofit/)
+[alvarez.tech/android-consumir-pokemon-api-retrofit](https://alvarez.tech/android-consumir-pokemon-api-retrofit)
 
 > The __master branch__ was updated with the migration of AndroidX and the update of gradle tools. If you want to see exactly the same version of the video, it is in the __video branch__.
 
