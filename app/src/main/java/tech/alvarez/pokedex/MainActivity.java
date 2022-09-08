@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
         listaPokemonAdapter = new ListaPokemonAdapter(this);
         recyclerView.setAdapter(listaPokemonAdapter);
         recyclerView.setHasFixedSize(true);
@@ -66,9 +65,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://pokeapi.co/api/v2/")
+                .baseUrl("https://pokeapi.co/api/v2/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -86,12 +84,10 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<PokemonRespuesta> call, Response<PokemonRespuesta> response) {
                 aptoParaCargar = true;
                 if (response.isSuccessful()) {
-
                     PokemonRespuesta pokemonRespuesta = response.body();
                     ArrayList<Pokemon> listaPokemon = pokemonRespuesta.getResults();
 
                     listaPokemonAdapter.adicionarListaPokemon(listaPokemon);
-
                 } else {
                     Log.e(TAG, " onResponse: " + response.errorBody());
                 }

@@ -44,7 +44,6 @@ public class ListaPokemonAdapter extends RecyclerView.Adapter<ListaPokemonAdapte
         Glide.with(context)
                 .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + p.getNumber() + ".png")
                 .centerCrop()
-                .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.fotoImageView);
     }
@@ -67,8 +66,8 @@ public class ListaPokemonAdapter extends RecyclerView.Adapter<ListaPokemonAdapte
         public ViewHolder(View itemView) {
             super(itemView);
 
-            fotoImageView = (ImageView) itemView.findViewById(R.id.fotoImageView);
-            nombreTextView = (TextView) itemView.findViewById(R.id.nombreTextView);
+            fotoImageView = itemView.findViewById(R.id.fotoImageView);
+            nombreTextView = itemView.findViewById(R.id.nombreTextView);
         }
     }
 }
