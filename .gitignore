@@ -10,8 +10,6 @@
 
 /.idea/
 
-gradle.properties
-
 # Eclipse
 .project
 .settings/
